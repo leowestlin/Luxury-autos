@@ -1,0 +1,542 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 100;
+}
+
+header h1 a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+section {
+  padding-left: 10px;
+  margin-left: 1%;
+}
+
+.car {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.car2 {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  width: 95%;
+}
+
+.car img {
+  max-width: 100%;
+}
+
+.car2 img {
+  max-width: 100%;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.bild {
+  display: flex;
+  justify-content: center;
+}
+
+.loga {
+  z-index: 1;
+  width: 23%;
+}
+
+.start {
+  z-index: -100;
+  margin-top: -22%;
+}
+
+
+
+h2 {
+  margin-top: 3%;
+  margin-left: 1%;
+  color: white;
+}
+
+.info p {
+  color: white;
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cart-content {
+  position: absolute;
+  top: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.cart-content.hidden {
+  display: none;
+}
+
+.cart:hover .cart-content {
+  display: flex;
+  z-index: 100;
+  justify-content: center;
+}
+
+.cart-icon {
+  font-size: 160%;
+}
+
+#cart-items li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.5%;
+  padding: 0.5%;
+  width: 100%;
+}
+
+
+
+#newest-cars {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+
+
+
+
+
+
+/* Footer */
+.fot{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  margin-bottom: 0;
+}
+
+footer {
+  position:static ;
+  bottom: 0%; /* Stick the footer to the bottom */
+  width: 100%; /* Full width */
+  background-color: rgb(26, 26, 26);
+  text-align: center;
+  padding-bottom: 20vh;
+  padding-bottom: 5vh;
+  overflow: hidden;
+  padding: 10px;
+  text-align: center;
+}
+
+
+a a1{
+color: white;
+font-family: socials;
+font-size: 80%;
+}
+
+.footersocials {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.footersocials a{
+font-family: socials;
+color: white;
+text-decoration: none;
+font-size: 200%;
+padding: 2%;
+transition-duration: 0.4s;
+}
+
+.footersocials a:hover{
+color: rgb(164, 42, 31);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+}
+
+.footerlinks, .footermenu, .info{
+  text-align: left;
+  padding-top: 2vh;
+  padding-bottom: 5vh;
+}
+
+.footerlinks a, .footermenu a, .info a{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 100%;
+}
+
+.footerlinks h1, .footermenu h1, .info h1{
+  font-size: 100%;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 1%;
+}
+
+
+.text-sälj {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+.form-style {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.form-style h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-style label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-style input[type=text],
+.form-style input[type=email],
+.form-style input[type=tel],
+.form-style select,
+.form-style textarea {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-style button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-style button:hover {
+  background-color: #555;
+}
+
+
+.om-oss {
+  background-color: white;
+  color: black;
+  padding: 2%;
+}
+
+.om-oss h1 {
+  text-align: center;
+}
+
+.oppetid {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tider {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.historia p {
+  width: 40%;
+}
+
+
+
+
+
+
+
+.checkout .cart-content {
+  display: block; 
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 10;
+  width: 70%;
+  margin-top: 15%;
+}
+
+.cart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.knapp-köp {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.space {
+  height: 44.9vh;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+  .fot{
+    margin-top: auto;
+    display: flex;
+  }
+  footer {
+    position:static ;
+    bottom: 0%; 
+    width: 100%; 
+    background-color: rgb(26, 26, 26);
+    text-align: center;
+    padding-bottom: 20vh;
+    padding-bottom: 5vh;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  a a1{
+  color: white;
+  font-family: socials;
+  font-size: 80%;
+  }
+  .footersocials {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .footersocials a {
+  font-family: socials;
+  color: white;
+  text-decoration: none;
+  font-size: 200%;
+  padding: 2%;
+  transition-duration: 0.4s;
+  }
+
+  .footersocials a:hover{
+  color: rgb(164, 42, 31);
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .footerlinks, .footermenu, .info{
+    text-align: left;
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+  }
+
+  .footerlinks, .footermenu {
+    text-align: left;
+    padding-top: 2vh;
+    padding-left: 10%;
+    padding-bottom: 5vh;
+  }
+  .footerlinks a, .footermenu a, .info a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 100%;
+  }
+  
+  .footerlinks h1, .footermenu h1, .info h1{
+    font-size: 100%;
+    color: white;
+  }
+
+
+
+  #newest-cars {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  section {
+    padding-left: 10px;
+    margin-left: 1%;
+    padding-right: 10px;
+  }
+
+  .form-style {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+
+  .text-sälj {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    text-align: center;
+  }
+  
+  .historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .historia p {
+    width: 80%;
+    font-size: 110%;
+  }
+  
+}

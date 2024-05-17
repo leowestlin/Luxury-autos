@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="SV">
+<head>
+  <title>Luxury auto</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="font.css">
+ 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Leo" />  
+  
+</head>
+
+
+
+
+<body>
+  <header>
+    <h1><a href="start.html">Luxury Autos</a></h1>
+    <nav>
+      <ul>
+        <li><a href="alla-bilar.html">Våra Bilar</a></li>
+        <li><a href="sälj.html">Sälj din bil</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <div class="cart">
+          <a href="#" class="cart-icon">🛒</a>
+          <div class="cart-content hidden">
+              <h4>Varukorg</h4>
+              <ul id="cart-items">
+              </ul>
+              <p id="total"></p>
+              <button><a href="köp.html">Köp</a></button>
+          </div>
+      </ul>
+    </nav>
+  </div>
+  </header>
+  
+
+
+  <main>
+    <div class="text-sälj">
+      <h1>Sälj din bil via <br> Luxury Autos</h1>
+    </div>
+    
+
+    <form id="myForm" class="form-style">
+      <h2>1. Biluppgifter</h2>
+      <label for="brandModel">Märke & modell*</label>
+      <input type="text" id="brandModel" name="brandModel" required>
+    
+      <label for="yearModel">Årsmodell*</label>
+      <input type="text" id="yearModel" name="yearModel" required>
+    
+      <label for="mileage">Antal mil*</label>
+      <input type="text" id="mileage" name="mileage" required>
+    
+      <label for="regNumber">Reg.nr*</label>
+      <input type="text" id="regNumber" name="regNumber" required>
+    
+      <label for="equipment">Utrustning</label>
+      <input type="text" id="equipment" name="equipment">
+    
+      <h2>2. Dina kontaktuppgifter</h2>
+      <label for="name">Namn*</label>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">E-postadress*</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="phone">Telefonnummer*</label>
+      <input type="tel" id="phone" name="phone" required>
+    
+      <label for="facility">Närmaste anläggning*</label>
+      <select id="facility" name="facility" required>
+        <option value="">Välj anläggning</option>
+        <option value="anl1">Stockholm</option>
+        <option value="anl2">Göteborg</option>
+        <!-- Add more options as needed -->
+      </select>
+    
+      <label for="message">Meddelande / Övrigt</label>
+      <textarea id="message" name="message"></textarea>
+    
+      <button type="button" id="submitButton" onclick="clearForm()">SKICKA FÖR VÄRDERING</button>
+    </form>
+
+
+    <script src="java.js"></script>
+  </main>
+
+
+  <div class="fot">
+    <footer>
+      <div class="footer">
+        <div class="footersocials">
+        <a href="#"> E </a>
+        <a href="#"> C </a>
+        <a href="#"> D </a>
+        <a href="mailto:contact@n420.net"> k </a>
+        </div>
+        <div class="footer-container">
+          <div class="info">
+            <h1>Luxury Autos</h1>
+            <a href="#">HQ</a>
+            <a href="#">Tallkrogsvägen 73</a>
+            <a href="#">122 39, Sverige</a>
+          <a href="#"><a1>k </a1>Leo.westlin@elev.ga.lbs.se</a>
+          </div>
+          <div class="footerlinks">
+            <h1>Länkar</h1>
+            <a href="#">Information</a>
+            <a href="#">Finansering och lån</a>
+            <a href="#">Säkerhet</a>
+            <a href="#">Mitt konto</a>
+          </div>
+          <div class="footermenu">
+            <h1>Kontrakt</h1>
+            <a href="#">Om oss</a>
+            <a href="#">Integritetspolicy</a>
+            <a href="#">Användarvillkor</a>
+            <a href="#">Kontakta oss</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+</body>
+
